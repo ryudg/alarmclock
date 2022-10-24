@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quantico", sans-serif;
+}
+body,
+.wrap,
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  background-image: url(./files/marble.webp);
+  padding: 0 10px;
+  min-height: 100vh;
+}
+.wrap {
+  width: 500px;
+  height: 500px;
+  padding: 30px 30px 10px;
+  background: #fff;
+  background-image: url(./files/bg1.jpeg);
+  flex-direction: column;
+  border: 10px groove rgb(102, 63, 63);
+  border-radius: 50%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  letter-spacing: 5px;
+  position: relative;
+  color: #fff;
+  text-shadow: 0 5px 25px #000;
+}
+.wrap .side {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.wrap .time {
+  font-size: 52px;
+  font-weight: 500;
+  margin: 30px 0;
+}
+.wrap .content {
+  width: 100%;
+  margin-top: 10px;
+}
+.content .column {
+  margin: 10px;
+}
+.content.disable {
+  cursor: no-drop;
+}
+.content .column {
+  border-radius: 10px;
+}
+.content.disable .column {
+  opacity: 0.3;
+  pointer-events: none;
+}
+.column select {
+  width: 80px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background: none;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  cursor: pointer;
+  color: #fff;
+  text-shadow: 2px 2px 10px #000;
+}
+.wrap button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 10px;
+  background: none;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  text-shadow: 2px 2px 10px #000;
+}
