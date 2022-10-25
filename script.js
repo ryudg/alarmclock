@@ -3,6 +3,14 @@ const Praampm = document.querySelector(".ampm");
 const content = document.querySelector(".content");
 const selectMenu = document.querySelectorAll("select");
 const setAlarmBtn = document.querySelector(".alarmbtn");
+const modeBtn = document.querySelector(".mode");
+const wrapBox = document.querySelector(".wrap");
+const bodyBox = document.querySelector("body");
+modeBtn.addEventListener("click", () => {
+  modeBtn.classList.toggle("active");
+  wrapBox.classList.toggle("active");
+  bodyBox.classList.toggle("active");
+});
 
 let alarmTime;
 let isAlarmSet;
